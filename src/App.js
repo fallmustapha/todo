@@ -6,11 +6,13 @@ import TextBox from "./components/text-box/component";
 function App() {
   return (
     <>
-    <div style={{margin:'auto',display:"flex",flexDirection:"row",width:"50%",justifyContent:"space-between",marginTop:"20px" }}>
-      <TextBox/>
-      <Button/>
-    </div>
-    <TaskList></TaskList>
+      <div style={{display:'flex', margin:'auto',marginTop:'30px', width:'50%',flexDirection:'row', justifyContent:'space-between' }}>
+        <TextBox/>
+        <Button/>
+      </div>
+      <div>
+        <TaskList/>
+      </div>
     </>
     
   )

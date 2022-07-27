@@ -1,7 +1,10 @@
 .task_box{
     display: flex;
     flex-direction: row;
-    width: 40%;
+    background-color: white;
+    padding: 5px;
+    margin-top: 2px;
+    width: auto;
 }
 .task_box-info{
     display: flex;
