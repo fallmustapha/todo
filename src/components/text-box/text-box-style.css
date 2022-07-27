@@ -1,0 +1,15 @@
+
+.text-box{
+    display: inline-block;
+    width: 25%;
+    margin: 10px 0;
+    background-color: white;
+    box-shadow: 0 0 4px rgba(red, green, rgb(0, 0, 255), 0.3);
+    border: 2px solid rgb(0, 89, 255);
+    padding: 10px;
+
+}
+.text-box:hover{
+    box-shadow: 0 0 4px rgba(red, green, rgb(0, 0, 255), 0.5);
+    border: 2px solid rgb(0, 89, 255);
+}

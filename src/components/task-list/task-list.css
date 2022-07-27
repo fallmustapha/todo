@@ -1,0 +1,7 @@
+.task_list-container{
+    width: 50%;
+    margin: auto;
+    background-color: #F0F0F0;
+    min-height: 300px;
+    margin-top: 20px;
+}

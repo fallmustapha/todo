@@ -1,0 +1,14 @@
+.button {
+    background-color: #0066FF; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 153px;
+    height: 53px;
+  }
