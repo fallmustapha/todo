@@ -1,12 +1,25 @@
+import { useState } from 'react'
 import './task-style.css'
 
-export default function Task(){
+export default function Task({title}){
+
+    const [state,setState]=useState(false);
+    const [hour,setHour] = useState(null);
+    
+
+    function onchange(evt){
+        setState(ste=>!ste);
+        const date = new Date();
+        setHour(date.getHours().toString()+':'+date.getMinutes().toString())
+    }
     return (
         <div className='task_box'>
-            <input className='checkbox-round' type={'checkbox'}></input>
+            <input onClick={onchange} className='checkbox-round' type={'checkbox'}></input>
             <div className='task_box-info'>
-                <span>Lire un livre</span>
-                <span>15h00</span>
+                <span style={{textDecoration:state?'line-through':'none'}}>{title}</span>
+                {
+                    state?<span>{hour}</span>:<span></span>
+                }
             </div>
         </div>
     )

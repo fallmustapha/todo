@@ -1,7 +1,7 @@
 import './button-style.css'
 
-const Button = ()=>{
- return <button className="button">Ajouter</button>
+const Button = ({onClick})=>{
+ return <button onClick={onClick}  className="button">Ajouter</button>
 }
 
 export default Button;
